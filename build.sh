@@ -6,7 +6,7 @@ echo "- - - Building - - -"
 echo "- - - - - - - - - - - - - - - -"
 
 # host needs: apt install qemu-user-static debootstrap -y
-debootstrap --no-check-gpg --foreign --arch=armhf buster ./raspbian http://archive.raspbian.org/raspbian
+debootstrap --no-check-gpg --foreign --arch=armhf bullseye ./raspbian http://archive.raspbian.org/raspbian
 cp /usr/bin/qemu-arm-static ./raspbian/usr/bin
 mkdir -p build
 mkdir -p ./raspbian/output
